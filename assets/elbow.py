@@ -1,4 +1,5 @@
-# Source: http://www.slideshare.net/SarahGuido/kmeans-clustering-with-scikitlearn
+# inspired by the source code from
+# www.slideshare.net/SarahGuido/kmeans-clustering-with-scikitlearn
 def plot_elbow(df, n):
     import matplotlib.pyplot as plt
     from sklearn.cluster import KMeans
@@ -20,12 +21,8 @@ def plot_elbow(df, n):
     # total within cluster sum of squares
     wcss = [sum(d**2) for d in dist]
     
-    # total sum of squares
-    tss = sum(pdist(df.values)**2)/df.values.shape[0]
-    
-    # between clusters sum of squares
-    bss = tss - wcss
-    
     # plot the variance of the models
     plt.plot(list(range(1,n+1)),wcss)
+    plt.xlabel('k')
+    plt.ylabel('Within Cluster Variance')
     plt.show()
