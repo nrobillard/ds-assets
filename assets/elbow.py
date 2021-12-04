@@ -27,5 +27,5 @@ def plot_elbow(df, n):
     bss = tss - wcss
     
     # plot the variance of the models
-    plt.plot(list(range(1,n+1)),bss)
+    plt.plot(list(range(1,n+1)),wss)
     plt.show()
