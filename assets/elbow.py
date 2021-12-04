@@ -1,6 +1,6 @@
 # inspired by the source code from
 # www.slideshare.net/SarahGuido/kmeans-clustering-with-scikitlearn
-def plot_elbow(df, n):
+def plot_elbow(df, n=10):
     import matplotlib.pyplot as plt
     from sklearn.cluster import KMeans
     import numpy as np
