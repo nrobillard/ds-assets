@@ -9,7 +9,7 @@ preamble,
 # if it is installed make sure it is the latest
 !test -e ds-assets && cd ds-assets && git pull && cd ..
 # if it is not installed clone it 
-!test ! -e ds-assets && git clone https://github.com/IndraniMandal/ds-assets.git
+!test ! -e ds-assets && git clone https://github.com/nrobillard/ds-assets.git
 # point to the folder with the assets
 home = "ds-assets/assets/" 
 import sys
