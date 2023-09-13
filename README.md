@@ -11,8 +11,8 @@ preamble,
 # if it is not installed clone it 
 !test ! -e ds-assets && git clone https://github.com/nrobillard/ds-assets.git
 # point to the folder with the assets
-home = "ds-assets/assets/" 
+path = "ds-assets/assets/" 
 import sys
-sys.path.append(home)      # add home folder to module search path
+sys.path.append(path)      # add home folder to module search path
 ```
 
